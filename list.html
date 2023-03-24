@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YARA's List</title>
+    <meta name="description" content="This is YARA's world , welcome to metaverse , there are different kinds of YARA's modes , containing music film books etc ">
+    <meta name="keywords" content="YARA , music , film , books , mood">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="shortcut icon" href=" favicon.ico" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/list.css">
+    <script src="js/animate.js"></script>
+    <script src="js/2.js"></script>
+    <script src="js/4.js"></script>
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- search -->
+    <header class="header w">
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="YARA's metaverse">YARA</a>
+            </h1>
+        </div>
+        <div class="sk">
+            <img src="images/1.jpg" class="img">
+        </div>
+        <div class="search">
+            <input type="search" name="" id="" placeholder="Music">
+            <button>search</button>
+        </div>
+        <div class="hotwords">
+            <a href="#">I</a>
+            <a href="#">BLINK</a>
+            <a href="#">MY</a>
+            <a href="#">EYES</a>
+            <a href="#">TO</a>
+            <a href="#">KEEP</a>
+            <a href="#">THE</a>
+            <a href="#">TIME</a>
+        </div>
+        <div class="shopcar">My list
+            <i class="count">7</i>
+        </div>
+    </header>
+
+
+
+    <!-- navigation -->
+    <nav class="nav">
+        <div class="w">
+            <div class="sk_list">
+                <ul>
+                    <li>
+                        <a href="#">Playlists</a>
+                    </li>
+                    <li>
+                        <a href="#">Albums</a>
+                    </li>
+                    <li>
+                        <a href="#">Podcasts&Shows</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sk_con">
+                <ul>
+                    <span class="cloud"></span>
+                    <li><a href="#">Hip-Hop</a></li>
+                    <li><a href="#">R&B</a></li>
+                    <li><a href="#">Rock</a></li>
+                    <li><a href="#">Mood</a></li>
+                    <li><a href="#">Chill</a></li>
+                    <li><a href="#">Pop</a></li>
+                    <li><a href="#">Country</a></li>
+                    <li><a href="#">Jazz</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- list main container -->
+    <div class="w sk_container clearfix">
+        <div class="sk_hd clearfix">
+            <h3>ALBUMs</h3>
+        </div>
+        <div class="sk_bd clearfix">
+            <ul>
+                <li id=nuja>
+                    <div class="mask" id="ms"></div>
+                    <img src="upload/NUJAB.jpg" alt="" id="nujimg">
+                    <h4>Luv(sic) Hexalogy</h4>
+                    <h5>Nujabes / Shing02</h5>
+                    <div class="big">
+                        <img src="upload/nnnnn.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="mask"></div>
+                    <img src="upload/eor.jpg" alt="">
+                    <h4>The Juice: Vol. II</h4>
+                    <h5>Emotional Oranges</h5>
+                </li>
+
+                <li>
+                    <div class="mask"></div>
+                    <img src="upload/stboy.jpg" alt="">
+                    <h4>Starboy</h4>
+                    <h5>The Weeknd</h5>
+                </li>
+
+                <li>
+                    <div class="mask"></div>
+                    <img src="upload/808.jpg" alt="">
+                    <h4>808s & Heartbreak</h4>
+                    <h5>Kanye West</h5>
+                </li>
+
+                <li>
+                    <div class="mask"></div>
+                    <img src="upload/dam.jpg" alt="">
+                    <h4>DAMN.</h4>
+                    <h5>Kendrick Lamar</h5>
+                </li>
+
+                <li>
+                    <div class="mask"></div>
+                    <img src="upload/BB.jpg" alt="">
+                    <h4>Beerbongs & Bentleys</h4>
+                    <h5>Post Malone</h5>
+                </li>
+
+                <li>
+                    <div class="mask"></div>
+                    <img src="upload/IM.jpg" alt="">
+                    <h4>I am > I was</h4>
+                    <h5>21 Savage</h5>
+                </li>
+
+                <li>
+                    <div class="mask"></div>
+                    <img src="upload/BUS.jpg" alt="">
+                    <h4>Bushido</h4>
+                    <h5>Mello Music Group</h5>
+                </li>
+
+
+                <li>
+                    <div class="mask"></div>
+                    <img src="upload/LOVBUG.jpg" alt="">
+                    <h4>Only Forever </h4>
+                    <h5>Lovebugs</h5>
+                </li>
+
+
+                <li>
+                    <div class="mask"></div>
+                    <img src="upload/BLON.jpg" alt="">
+                    <h4>Blonde</h4>
+                    <h5>Frank Ocean</h5>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $('.sk_bd li').hover(function() {
+                $(this).siblings().stop().fadeTo(400, 0.5);
+            }, function() {
+                $(this).siblings().stop().fadeTo(400, 1);
+            })
+        })
+    </script>
+
+
+    <footer class="footer clearfix">
+        <div class="w">
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <h5 class="c"></h5>
+                        <div class="service_txt">
+                            <h4>YARA</h4>
+                            <p>CYBORG</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="i"></h5>
+                        <div class="service_txt">
+                            <h4>YARA</h4>
+                            <p>IMBECILE</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="sl"></h5>
+                        <div class="service_txt">
+                            <h4>YARA</h4>
+                            <p>CORP SLAVE</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="n"></h5>
+                        <div class="service_txt">
+                            <h4>YARA</h4>
+                            <p>NF</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mod_help">
+                <dl>
+                    <dt>ABOUT YARA</dt>
+
+                    <dd>
+                        <a href="#">introduction</a>
+                    </dd>
+                    <dd>
+                        <a href="#">questions</a>
+                    </dd>
+
+                    <dd>
+                        <a href="#">YARA cloud</a>
+                    </dd>
+                    <dd>
+                        <a href="#">YARA podcast</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>YARA VALUE</dt>
+
+                    <dd>
+                        <a href="#">past</a>
+                    </dd>
+                    <dd>
+                        <a href="#">present</a>
+                    </dd>
+                    <dd>
+                        <a href="#">future</a>
+                    </dd>
+
+
+                </dl>
+                <dl>
+                    <dt>YARA MODE</dt>
+
+                    <dd>
+                        <a href="#">wet ware</a>
+                    </dd>
+                    <dd>
+                        <a href="#">cyborg</a>
+                    </dd>
+                    <dd>
+                        <a href="#">corp slave</a>
+                    </dd>
+
+                </dl>
+                <dl>
+                    <dt>YARA STATUS</dt>
+
+                    <dd>
+                        <a href="#">zoning out</a>
+                    </dd>
+                    <dd>
+                        <a href="#">vixen</a>
+                    </dd>
+                    <dd>
+                        <a href="#">NF</a>
+                    </dd>
+                    <dd>
+                        <a href="#">low mood</a>
+                    </dd>
+                    <dd>
+                        <a href="#">none to her</a>
+                    </dd>
+
+                </dl>
+                <dl>
+                    <dt>FIND YARA</dt>
+
+                    <dd>
+                        <a href="#">E-mail</a>
+                    </dd>
+                    <dd>
+                        <a href="#">Text</a>
+                    </dd>
+                    <dd>
+                        <a href="#">404 not found</a>
+                    </dd>
+
+                </dl>
+            </div>
+
+
+            <div class="mod_copyright">
+                <div class="links">
+                    Copyright © 2022 Yara Inc. All rights reserved. <a href="#">Privacy Policy </a> | <a href="#">Terms of Use </a> | <a href="#">Sales and Refunds</a> | <a href="#">Legal</a> | <a href="#">Site Map</a>
+                </div>
+                <div class="copyright">
+                    Address:Mars
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
