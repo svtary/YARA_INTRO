@@ -1,0 +1,158 @@
+.recom {
+  height: 163px;
+  /* background-color: yellowgreen; */
+  margin-top: 12px;
+}
+
+.recom_hd {
+  float: left;
+  height: 163px;
+  width: 205px;
+  text-align: center;
+}
+
+.recom_hd img {
+  width: 205px;
+  height: 163px;
+}
+
+.recom_bd {
+  width: 980px;
+  height: 160px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.recom_bd ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.recom_bd ul li {
+  padding-right: 5px;
+  margin-right: 20px;
+  line-height: 163px;
+  text-align: center;
+}
+
+.recom_bd img {
+  height: 163px;
+}
+
+.floor .w {
+  margin-top: 30px;
+}
+
+.box_hd {
+  height: 30px;
+  border-bottom: 2px solid rgb(230, 114, 5);
+  margin-bottom: 20px;
+}
+
+.box_hd h3 a {
+  float: left;
+  font-size: 18px;
+  color: rgb(230, 114, 5);
+}
+
+.tab_list {
+  float: right;
+  line-height: 30px;
+}
+
+.tab_list ul li {
+  float: right;
+}
+
+.tab_list ul li a {
+  margin: 0 15px;
+  color: rgb(230, 114, 5);
+}
+
+.tab_list ul li :hover {
+  color: aliceblue;
+}
+
+.box_bd .tab_content {
+  width: 1225px;
+  background-color: blue;
+}
+
+.box_bd .tab_content ul li {
+  position: relative;
+  /*子绝父相*/
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 228px;
+  height: 270px;
+  background-color: #ff5700;
+}
+
+.box_bd ul li {
+  transition: all 0.4s;
+}
+
+.box_bd .tab_content ul li:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.box_bd .tab_content ul li .mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 228px;
+  height: 270px;
+  background: rgba(235, 81, 9, 0.5);
+}
+
+.box_bd .tab_content ul li:hover .mask {
+  display: block;
+}
+
+.box_bd .tab_content ul li>img {
+  width: 100%;
+}
+
+.box_bd .tab_content ul li .bruh {
+  width: 70px;
+  height: 25px;
+}
+
+.box_bd .tab_content ul li em {
+  position: absolute;
+  top: 2px;
+  right: -4px;
+}
+
+.box_bd .tab_content ul li h4 {
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.box_bd .tab_content ul li h4 a {
+  color: black;
+}
+
+.box_bd .tab_content ul li:hover {
+  box-shadow: 2px 2px 2px 2px rgba(245, 240, 240, 0.3);
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}

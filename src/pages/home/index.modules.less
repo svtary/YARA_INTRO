@@ -1,0 +1,515 @@
+.home-container {
+  background-color: #000;
+
+  .w {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header {
+    position: relative;
+    height: 105px;
+  }
+
+  .header .logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+  }
+
+  .logo h1 a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url(../../assets/images/logo.png) no-repeat center;
+    background-size: 180px 61px;
+    font-size: 0;
+  }
+
+  // .search {
+  //   height: 2.5rem;
+  //   display: flex;
+  //   width: 100%;
+  //   max-width: 15rem;
+  //   border-radius: 0.25rem;
+  //   transition: width ease 0.4s;
+
+  //   input.search-input {
+  //     width: 100%;
+  //     height: 100%;
+  //     border: none;
+  //     background-color: var(--search-bg);
+  //     border-radius: 0.25rem;
+  //     font-family: var(--body-font);
+  //     font-size: 1rem;
+  //     font-weight: 500;
+  //     padding: 0 1.25rem 0 2.5rem;
+  //     box-shadow: 0 0 0 2px rgb(134 140 160 / 2%);
+  //     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56.966 56.966' fill='%23717790c7'%3e%3cpath d='M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z'/%3e%3c/svg%3e");
+  //     background-size: 0.875rem;
+  //     background-repeat: no-repeat;
+  //     background-position: 1rem 48%;
+  //     color: var(--theme-color);
+
+  //     &::placeholder {
+  //       font-family: var(--body-font);
+  //       color: var(--inactive-color);
+  //       font-size: 1rem;
+  //       font-weight: 500;
+  //     }
+  //   }
+  // }
+
+  .search {
+    position: absolute;
+    left: 346px;
+    top: 35px;
+    width: 538px;
+    height: 45px;
+    border: 2px solid rgb(230, 114, 5);
+  }
+
+  .search input {
+    width: 455px;
+    height: 41px;
+    padding-left: 10px;
+    background-color: black;
+    color: aliceblue;
+  }
+
+  .search button {
+    width: 70px;
+    height: 41px;
+    padding-left: 28px;
+    background-color: black;
+    font-size: 14px;
+    color: aliceblue;
+  }
+
+  .search button:hover {
+    color: rgb(230, 114, 5);
+  }
+
+  .hotwords {
+    position: absolute;
+    top: 80px;
+    left: 346px;
+  }
+
+  .hotwords a {
+    margin: 10px 10px;
+  }
+
+  .hotwords a :hover {
+    color: rgb(230, 114, 5);
+  }
+
+  .shopcar {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid rgb(230, 114, 5);
+    background-color: aliceblue;
+  }
+
+  .shopcar::before {
+    font-family: "icomoon";
+    content: "\e9bd";
+    margin-right: 10px;
+    color: rgb(230, 114, 5);
+  }
+
+  .shopcar::after {
+    font-family: "icomoon";
+    content: "\e920";
+    margin-left: 15px;
+  }
+
+
+  .count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    height: 14px;
+    line-height: 14px;
+    color: aliceblue;
+    background-color: rgb(230, 114, 5);
+    padding: 0 5px;
+    border-radius: 7px 7px 7px 0;
+  }
+
+  .nav {
+    height: 47px;
+    border-bottom: 2px solid rgb(230, 114, 5);
+  }
+
+  .nav .dropdown {
+    float: left;
+    width: 210px;
+    height: 45px;
+    background-color: rgb(230, 114, 5);
+  }
+
+  .nav .dropdown .dt {
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .nav .dropdown .dd {
+    width: 210px;
+    height: 465px;
+    background-color: #ff5700;
+    margin-top: 2px;
+  }
+
+  .nav .dropdown .dd img {
+    height: 465px;
+  }
+
+  .nav.navitems {
+    float: right;
+  }
+
+  .nav .dropdown .dd ul li {
+    position: relative;
+    padding-left: 10px;
+    height: 31px;
+    line-height: 31px;
+    margin-left: 2px;
+  }
+
+  .nav .dropdown .dd ul li:hover {
+    background-color: rgb(230, 114, 5);
+  }
+
+  .nav .dropdown .dd ul li a {
+    font-size: 14px;
+    color: aliceblue;
+  }
+
+  .nav .dropdown .dd ul li::after {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    font-family: "icomoon";
+    content: "\e920";
+    color: aliceblue;
+    font-size: 14px;
+  }
+
+  .navitems ul li {
+    float: left;
+    /* margin: 0 1px; */
+    perspective: 500px;
+    width: 130px;
+    height: 45px;
+    list-style: none;
+    line-height: 45px;
+    font-size: 13px;
+    padding: 0 25px;
+    text-align: center;
+    color: aliceblue;
+  }
+
+  .navitems ul li a {
+    display: block;
+    height: 45px;
+    /* margin: 0 auto; */
+    line-height: 45px;
+    font-size: 13px;
+    padding: 0 25px;
+    text-align: center;
+    color: aliceblue;
+  }
+
+  /* .navitems ul li:hover {
+    background-color: rgb(230, 114, 5);
+} */
+
+  .navitems .boxxxx1 {
+    position: relative;
+    top: -1px;
+    width: 130px;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s;
+  }
+
+  .navitems .boxxxx1:hover {
+    transform: rotateX(90deg);
+  }
+
+  .navitems .boxxxx1 .front,
+  .navitems .boxxxx1 .back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .navitems .boxxxx1 .front {
+    background-color: black;
+    z-index: 1;
+    transform: translateZ(17.5px);
+  }
+
+  .navitems .boxxxx1 .back {
+    background-color: rgb(230, 114, 5);
+    transform: translateY(17.5px) rotateX(-90deg);
+  }
+
+  .main {
+    margin-top: 10px;
+    height: 455px;
+    width: 980px;
+    margin-left: 220px;
+  }
+
+  .focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+    perspective: 3000px;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotateY(0);
+    }
+
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+  .focus section {
+    position: relative;
+    /* width: 721px;
+    height: 455px; */
+    /* margin: 60px auto; */
+    transform-style: preserve-3d;
+    animation: rotate 10s linear infinite;
+  }
+
+  .focus img {
+    height: 430px;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+
+  .focus section:hover {
+    animation-play-state: paused;
+  }
+
+  .focus section div {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url(upload/mai.jpg) !important;
+    background-size: cover; */
+  }
+
+  .focus section div:nth-child(1) {
+    transform: translateZ(100ppx);
+  }
+
+  .focus section div:nth-child(2) {
+    /* 先旋转 后移动 */
+    transform: rotateY(90deg) translateZ(100px);
+  }
+
+  .focus section div:nth-child(3) {
+    /* 先旋转 后移动 */
+    transform: rotateY(180deg) translateZ(100px);
+  }
+
+  .focus section div:nth-child(4) {
+    /* 先旋转 后移动 */
+    transform: rotateY(270deg) translateZ(100px);
+  }
+
+  .newflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+  }
+
+  .lifeservice {
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid rgb(230, 114, 5);
+  }
+
+  .lifeservice ul {
+    width: 252px;
+  }
+
+  .lifeservice ul li {
+    width: 63px;
+    float: left;
+    height: 71px;
+    border-right: 1px solid rgb(230, 114, 5);
+    border-bottom: 1px solid rgb(230, 114, 5);
+    text-align: center;
+  }
+
+  .lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+  }
+
+  .lifeservice ul li p {
+    color: rgb(230, 114, 5);
+    font-size: 8px;
+  }
+
+  .lifeservice .sad::before {
+    font-family: "icomoon";
+    font-size: 24px;
+    content: "\e900";
+    color: rgb(230, 114, 5);
+  }
+
+  .lifeservice .flashed::before {
+    font-family: "icomoon";
+    font-size: 24px;
+    content: "\e901";
+    color: rgb(230, 114, 5);
+  }
+
+  .lifeservice .winking::before {
+    font-family: "icomoon";
+    font-size: 24px;
+    content: "\e902";
+    color: rgb(230, 114, 5);
+  }
+
+  .lifeservice .stubborn::before {
+    font-family: "icomoon";
+    font-size: 24px;
+    content: "\e903";
+    color: rgb(230, 114, 5);
+  }
+
+  .lifeservice .neutral::before {
+    font-family: "icomoon";
+    font-size: 24px;
+    content: "\e904";
+    color: rgb(230, 114, 5);
+  }
+
+  .lifeservice .stuck-out::before {
+    font-family: "icomoon";
+    font-size: 24px;
+    content: "\e905";
+    color: rgb(230, 114, 5);
+  }
+
+  .lifeservice .grinning::before {
+    font-family: "icomoon";
+    font-size: 24px;
+    content: "\e906";
+    color: rgb(230, 114, 5);
+  }
+
+  .lifeservice .smiling::before {
+    font-family: "icomoon";
+    font-size: 24px;
+    content: "\e908";
+    color: rgb(230, 114, 5);
+  }
+
+  .lifeservice .astonished::before {
+    font-family: "icomoon";
+    font-size: 24px;
+    content: "\e909";
+    color: rgb(230, 114, 5);
+  }
+
+  .lifeservice .sun::before {
+    font-family: "icomoon";
+    font-size: 24px;
+    content: "\e90a";
+    color: rgb(230, 114, 5);
+  }
+
+  .lifeservice .evil::before {
+    font-family: "icomoon";
+    font-size: 24px;
+    content: "\e9f0";
+    color: rgb(230, 114, 5);
+  }
+
+  .lifeservice .numb::before {
+    font-family: "icomoon";
+    font-size: 24px;
+    content: "\e907";
+    color: rgb(230, 114, 5);
+  }
+
+  .news-hd {
+    height: 33px;
+    border-bottom: 1px dotted rgb(230, 114, 5);
+    padding: 0 15px;
+  }
+
+  .news-hd h5 {
+    float: left;
+    line-height: 33px;
+    font-size: 14px;
+    color: aliceblue;
+  }
+
+  .news-hd .more {
+    float: right;
+    line-height: 33px;
+    color: aliceblue;
+  }
+
+  .news-hd .more::after {
+    font-family: "icomoon";
+    content: "\e920";
+    line-height: 33px;
+    font-size: 10px;
+    color: aliceblue;
+  }
+
+  .news-bd {
+    padding: 5px 15px 0;
+  }
+
+  .news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .news-bd ul li a {
+    color: aliceblue;
+  }
+
+  .news-bd ul li:hover {
+    background-color: rgb(230, 114, 5);
+  }
+
+  .bargin img {
+    padding-left: 60px;
+    height: 81px;
+  }
+}
